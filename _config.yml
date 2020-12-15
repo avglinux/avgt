@@ -13,22 +13,36 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: AVG Test Website
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://avgt.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
+
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      comments: true
+
+# staticman (comments) configuration
+staticman_url: https://staticmanalu.herokuapp.com/v2/entry/avglinux/avgt/master/comments
+
+reCaptcha:
+      siteKey: 6LcK_QUaAAAAAMVQAFwxBLShIZMHN73eGePQeecW
+      secret: aoYN9+h7f/QRl7Zv12xXNbm/5fFN0Jbu1XYOw82eKruaCFeJqo7sxT9glSixmncftc3VVCNjqcec4gG/7qmqGkTxo8nGP/3NrG6F/oMmp1k5C/6bkAP5Aqs6onckA/rhOgE54lVUJNPKYw9iXtBR2cnUPazVJzXVkY8hzaBSj07dyDJx3ngU5iPLJug+AuZMarf+ePQzR2ot62ouJ23efVHd7iQUqco/IJKN07XblHEnPPBhUAFcrjY3D5qkJxwV2KgU99JED3Ap/k1onxBQnPyecooWOIS5W4DLMesmAWZpR6FFv6/AhLC/cfPdmxh4JPVLZGqG7UQh0bfhPmUc7BKVT/LfOFk3MoQJRPZq6jzXC6CaM+XLqXIoJLVXbNvSTBOCblAXiId5ZGKuU0/Y4LYdG1GtE2Q1e2zkNBPo5Rv5tIVcccppdfCvGMrgnOmU61q26pfumJ/D89yAxW2ANuC6FDXHqjIli/WVyVfGIK90QAXYvb8cRSwfL6TYriw+o/G62W45Fo5PNFc6oCrubAa2kGhzc3cn0kzJtVZaeJkSJsam4SNVAQbgvwhYU8U6sKxPC+Mf51kC1cM0xkFyR8F1CtZSWt1eG4CK07CQf5F/Gohdmr9jdMLpTlcS3MCEOHLYXeRddVZN48oJNIcyOWE2KhO97kf4rJApqTxcMFs=
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
