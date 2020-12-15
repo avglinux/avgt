@@ -39,7 +39,8 @@ defaults:
       comments: true
 
 # staticman (comments) configuration
-staticman_url: https://staticmanalu.herokuapp.com/v2/entry/avglinux/avgt/master/comments
+#staticman_url: https://staticmanalu.herokuapp.com/v2/entry/avglinux/avgt/master/comments
+staticman_url: https://avgt.netlify.app/.netlify/functions/staticman/avglinux/avgt/master/comments
 
 reCaptcha:
       siteKey: 6LcK_QUaAAAAAMVQAFwxBLShIZMHN73eGePQeecW
