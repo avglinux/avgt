@@ -1,1 +1,1 @@
-This is a [test repository](https://avgt.netlify.app).
+This is a [test website](https://avgt.netlify.app).
