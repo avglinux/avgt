@@ -5,5 +5,5 @@
 
 [build]
   publish = "_site"
-  command = "jekyll build && cd functions/staticman && npm install && npm start &"
+  command = "jekyll build && cd functions/staticman && npm install"
   functions = "functions"
