@@ -57,3 +57,5 @@ reCaptcha:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude: [functions, LICENSE, README.md, Gemfile, Gemfile.lock, _addons]
